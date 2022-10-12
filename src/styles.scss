@@ -1,1 +1,18 @@
+
+@import './assets/styles/media';
+@import './assets/styles/breakpoint';
+@import './assets/styles/fonts';
+@import './assets/styles/color-variables.scss';
+@import './assets/styles/navbar.scss';
+
+
 /* You can add global styles to this file, and also import other style files */
+html, body{
+  height: 100%;
+}
+
+body{
+  margin: 0;
+  font-family: Poppins;
+  background-color: $color-background;
+}

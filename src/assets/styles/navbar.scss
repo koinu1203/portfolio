@@ -1,0 +1,21 @@
+
+nav{
+  background-color: #ffffff;
+
+  ul{
+    li {
+      display: inline;
+      margin-inline: 1em;
+      a{
+        padding: auto;
+      }
+      &.element-navbar-right{
+        float: left;
+      }
+    }
+    li a:hover{
+      background-color: #111;
+    }
+  }
+
+}

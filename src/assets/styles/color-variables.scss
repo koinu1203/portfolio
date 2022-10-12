@@ -1,0 +1,40 @@
+$color-primary: #30322a;
+$color-primary-opacity: #30322a10;
+$color-background: #30322a;
+$color-black-inactive: rgba(0, 0, 0, 0.64);
+$color-black-opacity: rgba(0, 0, 0, 0.25);
+$color-black-opacity-transparent: rgba(0, 0, 0, 0.3);
+$color-blue: #4c70ef;
+$color-gray: #1c1c1c;
+$color-gray-light: #30322a;
+$color-blue-dark: #292c36;
+$color-blue-light: #558fff;
+$color-white: white;
+
+:root {
+  --colorPrimary: $color-primary;
+}
+
+.color-blue {
+  color: $color-blue;
+}
+
+.color-gray {
+  color: $color-gray;
+}
+
+.color-gray-light {
+  color: $color-gray-light;
+}
+
+.color-blue-dark {
+  color: $color-blue-dark;
+}
+
+.color-blue-light {
+  color: $color-blue-light;
+}
+
+.color-white {
+  color: $color-white;
+}
