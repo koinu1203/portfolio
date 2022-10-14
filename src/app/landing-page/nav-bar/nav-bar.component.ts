@@ -6,14 +6,21 @@ import { Component, OnInit,Input, OnChanges, SimpleChanges } from '@angular/core
   styleUrls: ['./nav-bar.component.scss']
 })
 export class NavBarComponent implements OnInit,OnChanges {
-  @Input() links!:Array<any>;
+  @Input() linksNavBar!:any;
+  links: Array<any> = [];
+
   constructor() {
-    this.links=[];
   }
 
   ngOnChanges(changes: SimpleChanges): void {
-    if(changes['links'].currentValue){
-      console.log(this.links);
+    if(changes['linksNavBar'].currentValue){
+      this.links = Object.keys(this.linksNavBar).map((key)=>{
+        return {
+          key: key,
+          name: this.linksNavBar[key]
+        };
+      })
+      console.log(this.linksNavBar);
     }
   }
 
