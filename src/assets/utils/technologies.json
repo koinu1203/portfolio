@@ -1,0 +1,74 @@
+{
+  "technologies": {
+    "angular":{
+      "name": "Angular",
+      "organizationUrl":"https://angular.io/",
+      "logoImg":""
+    },
+    "react":{
+      "name": "React",
+      "organizationUrl":"https://es.reactjs.org/",
+      "logoImg":""
+    },
+    "javascript":{
+      "name": "JavaScript",
+      "organizationUrl":"https://developer.mozilla.org/en-US/docs/Web/JavaScript",
+      "logoImg":""
+    },
+    "css":{
+      "name": "SCSS/CSS",
+      "organizationUrl":"https://developer.mozilla.org/en-US/docs/Web/CSS",
+      "logoImg":""
+    },
+    "python":{
+      "name": "Python",
+      "organizationUrl":"https://www.python.org/",
+      "logoImg":""
+    },
+    "django":{
+      "name": "Django",
+      "organizationUrl":"https://www.djangoproject.com/",
+      "logoImg":""
+    },
+    "linux":{
+      "name": "Linux",
+      "organizationUrl":"https://www.linux.org/",
+      "logoImg":""
+    },
+    "html":{
+      "name": "HTML/HTML5",
+      "organizationUrl":"https://developer.mozilla.org/en-US/docs/Web/HTML",
+      "logoImg":""
+    },
+    "photoshop":{
+      "name": "Photoshop",
+      "organizationUrl":"https://www.adobe.com/pe/products/photoshop.html",
+      "logoImg":""
+    },
+    "springBoot": {
+      "name": "Spring Boot",
+      "organizationUrl":"https://spring.io/projects/spring-boot",
+      "logoImg":""
+    },
+    "bootstrap":{
+      "name": "Bootstrap",
+      "organizationUrl":"https://getbootstrap.com/",
+      "logoImg":""
+    },
+    "typescript":{
+      "name": "TypeScript",
+      "organizationUrl":"https://www.typescriptlang.org/",
+      "logoImg":""
+    },
+    "angularMaterial":{
+      "name": "Anuglar Material",
+      "organizationUrl":"https://material.angular.io/",
+      "logoImg":""
+    },
+    "git":{
+      "name": "Git",
+      "organizationUrl": "https://git-scm.com/",
+      "logoImg":""
+    }
+  }
+}

@@ -1,3 +1,4 @@
+import { environment } from './../../../../environments/environment';
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Languages } from '../enums';
@@ -11,10 +12,15 @@ export class DataService {
     private http: HttpClient
   ) { }
 
-  getSpanish(){
-    return this.http.get(Languages.SPANISH);
+  getConfig(idiom:Languages){
+    return this.http.get(
+      `${environment.config}${environment[idiom]}`
+    );
   }
-  getEnglish(){
-    return this.http.get(Languages.ENGLISH);
+
+  getTecnologies(){
+    return this.http.get(
+      ``
+    );
   }
 }

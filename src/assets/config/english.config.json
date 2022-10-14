@@ -1,0 +1,106 @@
+{
+  "title": "I'm Daniel Ortiz",
+  "subtitle": "Front-End Development",
+  "navBar": {
+    "about": "About",
+    "skills": "Skills",
+    "projects": "Projects",
+    "experience": "Experience",
+    "contact": "Contact Me"
+  },
+  "about": "Hi, my name is Daniel, I'm 22 years old and I'm a Front End developer. I am specialized in the main development frameworks such as Angular and React. I am in my 9th cycle studying Computer Systems Engineering at the private university in the north and I am very fond of the food of my country, Peru.",
+  "skills":[
+    "angular",
+    "react",
+    "javascript",
+    "css",
+    "python",
+    "django",
+    "linux",
+    "html",
+    "photoshop",
+    "springBoot",
+    "bootstrap",
+    "typescript",
+    "angularMaterial"
+  ],
+  "projects": [
+    {
+      "projectName":"E-GO",
+      "projectURL":"https://e-go-bff96.web.app/",
+      "githubRepository":"https://github.com/E-GOProyect",
+      "description":"E-GO is an app for creating and solving questionnaires, implementing websocket technology for use by several people in real time.",
+      "previewImg":""
+    },
+    {
+      "projectName":"Poke List",
+      "projectURL":"https://app-pokelist.web.app/#/",
+      "githubRepository":"https://github.com/koinu1203/PokeList",
+      "description":"Poke List is an app created for the search and visualization of the different pokemos present in the PokeAPI",
+      "previewImg":""
+    },
+    {
+      "projectName":"Portal 2 Enviroment",
+      "projectURL":"https://finalproyectkoinu.herokuapp.com/",
+      "githubRepository":"https://github.com/koinu1203/Portal2Enviroment-ProyectCGV-",
+      "description":"Portal 2 environment modeled in javascript with the Threejs library",
+      "previewImg":""
+    },
+    {
+      "projectName":"ImgDownloadScript",
+      "githubRepository":"https://github.com/koinu1203/ImgDownloadScript",
+      "description":"Scraping and image downloads script for the Tapas.io page",
+      "previewImg":""
+    },
+    {
+      "projectName":"Airline Proyect",
+      "githubRepository":"https://github.com/koinu1203/Airline-Bootcamp-Proyect-01",
+      "description":"The planning department of a well-known airline is requesting a computer program to estimate ticket sales for each commercial flight of its aircraft fleet for certain national routes.",
+      "previewImg":""
+    },
+    {
+      "projectName":"Adopcion Back End",
+      "githubRepository":"https://github.com/koinu1203/backend_App_Adopcion",
+      "description":"A small API created with Php for the consumption and manipulation of data in an animal shelter",
+      "previewImg":""
+    }
+  ],
+  "experience":[
+    {
+      "company":"NTTDATA - Interbank group",
+      "charge": "Front End Development",
+      "expDescription":"consumption of services, creation of micro fronts and responsive web design",
+      "startTime":"02-2022",
+      "endTime":"07-2022",
+      "implementedSkills":[
+        "angular",
+        "stenciljs",
+        "css",
+        "graphql",
+        "figma",
+        "invision",
+        "git"
+      ]
+    },
+    {
+      "company":"Roblex",
+      "charge": "Front End Support",
+      "expDescription":"application support and creation of new functionalities",
+      "startTime":"08-2022",
+      "endTime":"11-2022",
+      "implementedSkills":[
+        "angular",
+        "angularMaterial",
+        "figma",
+        "npm",
+        "git"
+      ]
+    }
+  ],
+  "contact":{
+    "github":"https://github.com/koinu1203",
+    "linkedin":"https://www.linkedin.com/in/danielortizpary/",
+    "correo":"daniel_ortizpary@hotmail.com",
+    "instagram":"https://www.instagram.com/i_koinu/"
+  }
+}
