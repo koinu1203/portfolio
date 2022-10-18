@@ -8,7 +8,7 @@ import { Component, OnInit,Input, OnChanges, SimpleChanges } from '@angular/core
 export class NavBarComponent implements OnInit,OnChanges {
   @Input() linksNavBar!:any;
   links: Array<any> = [];
-
+  selected: string='';
   constructor() {
   }
 
@@ -27,4 +27,11 @@ export class NavBarComponent implements OnInit,OnChanges {
   ngOnInit(): void {
   }
 
+  onSelectItem(key:string){
+    if(this.selected===key){
+      this.selected='';
+    }else{
+      this.selected=key;
+    }
+  }
 }

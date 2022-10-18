@@ -1,21 +1,79 @@
+@import './color-variables.scss';
 
-nav{
-  background-color: #ffffff;
 
-  ul{
-    li {
-      display: inline;
-      margin-inline: 1em;
-      a{
-        padding: auto;
-      }
-      &.element-navbar-right{
-        float: left;
-      }
-    }
-    li a:hover{
-      background-color: #111;
+a{
+  text-decoration: none;
+}
+.navbar{
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: $color-secondary;
+  display: flex;
+  justify-content: space-around;
+  .logo{
+    width: 100px;
+    height: 60px;
+    img{
+      filter: invert(1);
+      width: 100%;
+      height: 100%;
     }
   }
+  .nav{
+    display:flex;
+    justify-content: right;
+    align-items: center;
+    list-style: none;
+    margin: 0px;
+    .nav-item{
+      padding-block: 1em;
+      margin-inline: 1em;
+      display: flex;
+      flex-direction: column;
+      justify-content:center;
+      align-items: center;
+      color: $color-gray;
 
+      .underline-animation{
+        display: block;
+        position:relative;
+        bottom: -14px;
+        height: 2px;
+        background-color: $color-gray;
+        width: 0%;
+
+        transition-property: width,background-color;
+        transition-duration: 0.7s;
+        &.selected{
+          width: 100%;
+        }
+
+      }
+      &:hover{
+        color: $color-gray-light;
+      }
+      &:hover .underline-animation{
+        margin-left: 0%;
+        width: 100%;
+        // animation-name: underlinedshow;
+        // animation-duration: 0.5s;
+        // animation-timing-function: linear;
+      }
+
+    }
+    .selected {
+      transition-property: background-color;
+      background-color: $color-background;
+      .nav-item{
+        color: $color-gray-light;
+      }
+      #underline{
+        width: 100%;
+      }
+    }
+  }
 }
+
+

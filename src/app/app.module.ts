@@ -6,6 +6,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { DataService } from './landing-page/common/services/data.service';
 import { LandingPageModule } from './landing-page/landing-page.module';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { LandingPageModule } from './landing-page/landing-page.module';
     BrowserModule,
     AppRoutingModule,
     LandingPageModule,
-    HttpClientModule
+    HttpClientModule,
+    NgbModule
   ],
   providers: [DataService],
   bootstrap: [AppComponent]
