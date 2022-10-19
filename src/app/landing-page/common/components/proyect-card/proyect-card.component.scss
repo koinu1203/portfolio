@@ -60,6 +60,7 @@ $duration-animation: 0.5s;
   }
 
   .card-buttons {
+    margin-top: 15px;
     padding-bottom: 15px;
     grid-area: footer;
     display: none;
@@ -76,6 +77,7 @@ $duration-animation: 0.5s;
       border-radius: 18px;
       backdrop-filter: blur(10px);
       height: 100%;
+      min-height: fit-content;
       bottom: 0px;
       color: $color-gray-light;
 

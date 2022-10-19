@@ -7,9 +7,9 @@ import { IProyect } from '../../interfaces';
   styleUrls: ['./proyect-card.component.scss']
 })
 export class ProyectCardComponent implements OnInit {
-  @Input() dataProyect:IProyect;
+  @Input() dataProject:IProyect;
   constructor() {
-    this.dataProyect={
+    this.dataProject={
       projectName: 'default',
       projectURL: 'fasf',
       githubRepository:'sfaasf',

@@ -1,6 +1,7 @@
 import { Component, OnDestroy, OnInit } from '@angular/core';
 import { map, Subject, takeUntil } from 'rxjs';
 import { Languages } from './common/enums';
+import { IProyect } from './common/interfaces';
 import { DataService } from './common/services/data.service';
 
 @Component({
@@ -11,6 +12,7 @@ import { DataService } from './common/services/data.service';
 export class LandingPageComponent implements OnInit, OnDestroy {
   DATA: any;
   skills:Array<string> = [];
+  projects:Array<IProyect> = [];
   private unsubscribe$: Subject<void> = new Subject();
   constructor(private dataService: DataService) {}
   ngOnDestroy(): void {
@@ -30,6 +32,7 @@ export class LandingPageComponent implements OnInit, OnDestroy {
       .subscribe((val:any) => {
         this.DATA = val;
         this.skills = val['skills'];
+        this.projects = val['projects'];
       });
   }
 }

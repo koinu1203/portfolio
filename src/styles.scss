@@ -7,6 +7,7 @@
 @import './assets/styles/home.scss';
 @import './assets/styles/about.scss';
 @import './assets/styles/skills.scss';
+@import './assets/styles/proyects.scss';
 
 
 /* You can add global styles to this file, and also import other style files */
@@ -19,6 +20,9 @@ body{
   font-family: Poppins;
   background-color: $color-background;
   overflow-x: hidden;
+}
+h1,h2,h3,h4,h5{
+  letter-spacing:2px;
 }
 h1,h2,h3,h4,p{
   margin: 0px;
@@ -54,4 +58,22 @@ app-landing-page{
   height: 300vh;
 }
 
-
+button{
+  border: none;
+  border-radius: 10px;
+  color: $color-white;
+  background-color: $color-blue-light;
+  padding-block: 10px;
+  padding-inline:18px;
+  font-family: Poppins;
+  font-weight: bold;
+  &:hover{
+    cursor: pointer;
+    background-color: $color-blue;
+  }
+  &:active{
+    // cursor:default;
+    color: $color-gray;
+    background-color: $color-blue-dark;
+  }
+}
