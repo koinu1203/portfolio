@@ -9,11 +9,12 @@ app-nav-bar{
   top: 0;
   width: 100%;
   background-color: $color-secondary;
-  height: 60px;
+  height:fit-content;
 }
 .navbar{
   overflow: hidden;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-around;
   .logo{
     width: 100px;
@@ -30,6 +31,7 @@ app-nav-bar{
     align-items: center;
     list-style: none;
     margin: 0px;
+    padding: 0px;
     .nav-item{
       padding-block: 1em;
       margin-inline: 1em;
@@ -56,18 +58,16 @@ app-nav-bar{
       }
       &:hover{
         color: $color-gray-light;
-      }
-      &:hover .underline-animation{
-        margin-left: 0%;
-        width: 100%;
-        // animation-name: underlinedshow;
-        // animation-duration: 0.5s;
-        // animation-timing-function: linear;
+        .underline-animation{
+          margin-left: 0%;
+          width: 100%;
+        }
       }
 
     }
     .selected {
       transition-property: background-color;
+      height: 100%;
       background-color: $color-background;
       .nav-item{
         color: $color-gray-light;
