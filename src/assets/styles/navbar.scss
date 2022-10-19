@@ -4,12 +4,15 @@
 a{
   text-decoration: none;
 }
-.navbar{
-  overflow: hidden;
+app-nav-bar{
   position: fixed;
   top: 0;
   width: 100%;
   background-color: $color-secondary;
+  height: 60px;
+}
+.navbar{
+  overflow: hidden;
   display: flex;
   justify-content: space-around;
   .logo{

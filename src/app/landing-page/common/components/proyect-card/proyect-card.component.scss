@@ -1,18 +1,27 @@
 @import '/src/assets/styles/color-variables.scss';
 
-.proyect-card{
+$duration-animation: 0.5s;
+
+.proyect-card {
   // background-color: white;
   max-width: 300px;
-  height:fit-content;
+  height: 280px;
   display: inline-flex;
   flex-direction: column;
+  justify-content: flex-end;
   border-radius: 20px 20px 18px 18px;
-  img{
-    height: 300px;
+  -webkit-box-shadow: 0px 0px 0px 2px $color-blue-dark;
+  -moz-box-shadow: 0px 0px 0px 2px $color-blue-dark;
+  box-shadow: 0px 0px 0px 2px $color-blue-dark;
+
+  img {
+    position: absolute;
+    height: 280px;
     width: 300px;
-    border-radius: 18px 18px 0px 0px;
+    border-radius: 18px;
   }
-  .proyect-information{
+
+  .proyect-information {
     position: relative;
     display: inherit;
     height: 80px;
@@ -21,22 +30,24 @@
     justify-items: center;
     justify-content: center;
     width: 300px;
-    background-color: $color-gray-light;
+    background-color: $color-blue-dark;
     border-radius: 0px 0px 18px 18px;
     padding-top: 10px;
     bottom: 0px;
+    color: $color-white;
+    transition-property: bottom, height, border-radius;
+    transition-duration: $duration-animation;
 
-    transition-property: bottom,height,border-radius;
-    transition-duration: 0.8s;
-    .proyect-title{
+    .proyect-title {
       inline-size: 250px;
       overflow-wrap: break-word;
-      font-size:large;
+      font-size: large;
       text-transform: uppercase;
       font-weight: bold;
       color: inherit;
     }
-    .proyect-description{
+
+    .proyect-description {
       margin-top: 0px;
       width: 250px;
       white-space: nowrap;
@@ -44,51 +55,46 @@
       text-overflow: ellipsis;
       font-size: small;
       transition-property: white-space;
-      transition-duration: 0.5s;
+      transition-duration: $duration-animation;
     }
   }
-  .card-buttons{
+
+  .card-buttons {
     padding-bottom: 15px;
     grid-area: footer;
     display: none;
     width: 80%;
     flex-direction: row;
-    justify-content:space-around;
+    justify-content: space-around;
   }
-  &:hover img{
-    border-radius: 18px;
-  }
-  &:hover .proyect-information{
-    background-color: rgba(4, 0, 38, 0.274);
-    // border: 1px solid $color-gray-light;
-    justify-items: center;
-    justify-content: center;
-    border-radius: 18px;
-    backdrop-filter: blur(10px);
-    height: 300px;
-    bottom: 250px;
-    color: $color-gray-light;
-    .proyect-title{
-      color: $color-blue;
-    }
-    .proyect-description{
-      inline-size: 250px;
-      white-space: break-spaces;
-      overflow: visible;
-      overflow-wrap: break-word;
-      text-overflow:initial;
 
-    }
-  }
-  &:hover .card-buttons{
-    display: flex;
-  }
-  @keyframes showinformation {
-    from{
+  &:hover {
+    .proyect-information {
+      background-color: rgba(3, 0, 27, 0.274);
+      justify-items: center;
+      justify-content: center;
+      border-radius: 18px;
+      backdrop-filter: blur(10px);
+      height: 100%;
+      bottom: 0px;
+      color: $color-gray-light;
 
-    }
-    to{
+      .proyect-title {
+        color: $color-blue;
+      }
 
+      .proyect-description {
+        inline-size: 250px;
+        white-space: break-spaces;
+        overflow: visible;
+        overflow-wrap: break-word;
+        text-overflow: initial;
+
+      }
+    }
+
+    .card-buttons {
+      display: flex;
     }
   }
 }
