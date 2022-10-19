@@ -10,6 +10,7 @@ import { DataService } from './common/services/data.service';
 })
 export class LandingPageComponent implements OnInit, OnDestroy {
   DATA: any;
+  skills:Array<string> = [];
   private unsubscribe$: Subject<void> = new Subject();
   constructor(private dataService: DataService) {}
   ngOnDestroy(): void {
@@ -26,8 +27,9 @@ export class LandingPageComponent implements OnInit, OnDestroy {
       .pipe(
         takeUntil(this.unsubscribe$)
       )
-      .subscribe((val) => {
+      .subscribe((val:any) => {
         this.DATA = val;
+        this.skills = val['skills'];
       });
   }
 }

@@ -1,3 +1,4 @@
+import { environment } from './../../../../../environments/environment.prod';
 import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
@@ -7,7 +8,9 @@ import { Component, Input, OnInit } from '@angular/core';
 })
 export class SkillCardComponent implements OnInit {
   @Input() skillName:string='html';
+  @Input() skillSVG:string='html-logo.svg';
   @Input() urlSkill:string='';
+  logosPath=environment.logosPath;
   constructor() { }
 
   ngOnInit(): void {

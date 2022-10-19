@@ -20,7 +20,7 @@ export class DataService {
 
   getTecnologies(){
     return this.http.get(
-      ``
+      `${environment.tecnologies}`
     );
   }
 }

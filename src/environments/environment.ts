@@ -6,7 +6,7 @@ export const environment = {
   production: false,
   tecnologies: '/assets/utils/technologies.json',
   config: '/assets/config',
-
+  logosPath: '/assets/img/logos/',
 // Idioms
   english: '/english.config.json',
   spanish: '/spanish.config.json',

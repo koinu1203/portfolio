@@ -1,7 +1,7 @@
 <div class="container">
   <app-home id="home"></app-home>
-  <app-about [aboutMessage]="DATA?.about"></app-about>
-
+  <app-about id="about" [aboutMessage]="DATA?.about"></app-about>
+  <app-skills id="skills" [skills]="skills"></app-skills>
 </div>
 <app-nav-bar [linksNavBar]="DATA?.navBar"></app-nav-bar>
 

@@ -7,6 +7,7 @@ import { NavBarComponent } from './nav-bar/nav-bar.component';
 import { HomeComponent } from './home/home.component';
 import { SharedComponentsModule } from './common/components/shared-components.module';
 import { AboutComponent } from './about/about.component';
+import { SkillsComponent } from './skills/skills.component';
 
 
 @NgModule({
@@ -14,7 +15,8 @@ import { AboutComponent } from './about/about.component';
     LandingPageComponent,
     NavBarComponent,
     HomeComponent,
-    AboutComponent
+    AboutComponent,
+    SkillsComponent
   ],
   imports: [
     CommonModule,

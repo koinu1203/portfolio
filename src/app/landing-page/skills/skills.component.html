@@ -1,0 +1,16 @@
+<div class="skills-container">
+  <div class="skills-text">
+    <h2>skills</h2>
+    <h3>Specialized in frameworks and new technologies</h3>
+  </div>
+  <div *ngIf="technologies && skills.length>0"
+       class="skills-technologies">
+    <div class="skills-card"
+         *ngFor="let keySkill of skills">
+      <app-skill-card [skillName]="technologies[keySkill].name"
+                      [skillSVG]="technologies[keySkill].logoImg"
+                      [urlSkill]="technologies[keySkill].organizationUrl"></app-skill-card>
+    </div>
+
+  </div>
+</div>

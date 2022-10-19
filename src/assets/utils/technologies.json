@@ -3,72 +3,67 @@
     "angular":{
       "name": "Angular",
       "organizationUrl":"https://angular.io/",
-      "logoImg":""
+      "logoImg":"angular-logo.svg"
     },
     "react":{
       "name": "React",
       "organizationUrl":"https://es.reactjs.org/",
-      "logoImg":""
+      "logoImg":"react-logo.svg"
     },
     "javascript":{
       "name": "JavaScript",
       "organizationUrl":"https://developer.mozilla.org/en-US/docs/Web/JavaScript",
-      "logoImg":""
+      "logoImg":"javascript-logo.svg"
     },
     "css":{
       "name": "SCSS/CSS",
       "organizationUrl":"https://developer.mozilla.org/en-US/docs/Web/CSS",
-      "logoImg":""
+      "logoImg":"css-logo.svg"
     },
     "python":{
       "name": "Python",
       "organizationUrl":"https://www.python.org/",
-      "logoImg":""
+      "logoImg":"python-logo.svg"
     },
     "django":{
       "name": "Django",
       "organizationUrl":"https://www.djangoproject.com/",
-      "logoImg":""
+      "logoImg":"django-logo.svg"
     },
     "linux":{
       "name": "Linux",
       "organizationUrl":"https://www.linux.org/",
-      "logoImg":""
+      "logoImg":"linux-logo.svg"
     },
     "html":{
       "name": "HTML/HTML5",
       "organizationUrl":"https://developer.mozilla.org/en-US/docs/Web/HTML",
-      "logoImg":""
+      "logoImg":"html-logo.svg"
     },
     "photoshop":{
       "name": "Photoshop",
       "organizationUrl":"https://www.adobe.com/pe/products/photoshop.html",
-      "logoImg":""
+      "logoImg":"photoshop-logo.svg"
     },
     "springBoot": {
       "name": "Spring Boot",
       "organizationUrl":"https://spring.io/projects/spring-boot",
-      "logoImg":""
+      "logoImg":"spring-logo.svg"
     },
     "bootstrap":{
       "name": "Bootstrap",
       "organizationUrl":"https://getbootstrap.com/",
-      "logoImg":""
+      "logoImg":"bootstrap-logo.svg"
     },
     "typescript":{
       "name": "TypeScript",
       "organizationUrl":"https://www.typescriptlang.org/",
-      "logoImg":""
-    },
-    "angularMaterial":{
-      "name": "Anuglar Material",
-      "organizationUrl":"https://material.angular.io/",
-      "logoImg":""
+      "logoImg":"typescript-logo.svg"
     },
     "git":{
       "name": "Git",
       "organizationUrl": "https://git-scm.com/",
-      "logoImg":""
+      "logoImg":"git-logo.svg"
     }
   }
 }
