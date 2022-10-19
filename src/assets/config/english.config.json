@@ -8,7 +8,7 @@
     "experience": "Experience",
     "contact": "Contact Me"
   },
-  "about": "Hi, my name is Daniel, I'm 22 years old and I'm a Web Developer specialized in the main development front-end frameworks such as Angular and React, and essential knowledge of Back-End frameworks like Sprintboot and Django. I am in my 9th cycle studying Computer Systems Engineering at Private University of the North and I really like the food of my country, Perú.",
+  "about": "Hi, my name is Daniel, I have 22 years old and I'm a Web Developer specialized in the main development front-end frameworks such as Angular and React, and essential knowledge of Back-End frameworks like Sprintboot and Django. I am in my 9th cycle studying Computer Systems Engineering at Private University of the North and I really like the food of my country, Perú.",
   "skills":[
     "angular",
     "react",
@@ -101,6 +101,7 @@
     "github":"https://github.com/koinu1203",
     "linkedin":"https://www.linkedin.com/in/danielortizpary/",
     "correo":"daniel_ortizpary@hotmail.com",
-    "instagram":"https://www.instagram.com/i_koinu/"
+    "instagram":"https://www.instagram.com/i_koinu/",
+    "whastapp":"https://api.whatsapp.com/send?phone=51947638171"
   }
 }

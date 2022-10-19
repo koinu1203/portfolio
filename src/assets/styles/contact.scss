@@ -1,0 +1,42 @@
+@import './color-variables.scss';
+
+.contact-container{
+  margin-top: 120px;
+  padding-block: 50px;
+  background-color: $color-blue-dark;
+  .contact-link{
+    &-list{
+      margin-top: 30px;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+
+    }
+
+  }
+  .contact-footer{
+    color: $color-gray-light;
+  }
+}
+.icon{
+  padding: 10px;
+  width: 40px;
+  height: 40px;
+
+  &-github{
+    filter: invert(1);
+  }
+  &-instragram{
+    filter: invert(1);
+  }
+  &-linkedin{
+    filter: invert(0);
+  }
+  &-whatsapp{
+    filter: invert(1);
+  }
+  &-correo{
+    filter: invert(1);
+
+  }
+}

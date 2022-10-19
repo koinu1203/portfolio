@@ -12,6 +12,7 @@ import { SkillsComponent } from './skills/skills.component';
 import { ProyectsComponent } from './proyects/proyects.component';
 import { AppRoutingModule } from '../app-routing.module';
 import { ExperiencesComponent } from './experiences/experiences.component';
+import { ContactComponent } from './contact/contact.component';
 
 
 @NgModule({
@@ -22,7 +23,8 @@ import { ExperiencesComponent } from './experiences/experiences.component';
     AboutComponent,
     SkillsComponent,
     ProyectsComponent,
-    ExperiencesComponent
+    ExperiencesComponent,
+    ContactComponent
   ],
   imports: [
     CommonModule,

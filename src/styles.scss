@@ -9,6 +9,8 @@
 @import './assets/styles/skills.scss';
 @import './assets/styles/proyects.scss';
 @import './assets/styles/experiences.scss';
+@import './assets/styles/contact.scss';
+
 
 
 /* You can add global styles to this file, and also import other style files */
@@ -30,6 +32,15 @@ h1,h2,h3,h4,p{
   padding: 0px;
   color: $color-white;
 
+}
+a{
+  color: $color-blue-light;
+  &:hover{
+    color: $color-blue;
+  }
+  &:active{
+    color: $color-gray;
+  }
 }
 h1{
   font-weight: bolder;
