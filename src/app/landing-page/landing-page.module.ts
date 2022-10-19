@@ -6,13 +6,15 @@ import { LandingPageComponent } from './landing-page.component';
 import { NavBarComponent } from './nav-bar/nav-bar.component';
 import { HomeComponent } from './home/home.component';
 import { SharedComponentsModule } from './common/components/shared-components.module';
+import { AboutComponent } from './about/about.component';
 
 
 @NgModule({
   declarations: [
     LandingPageComponent,
     NavBarComponent,
-    HomeComponent
+    HomeComponent,
+    AboutComponent
   ],
   imports: [
     CommonModule,

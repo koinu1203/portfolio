@@ -1,6 +1,9 @@
-<app-nav-bar [linksNavBar]="DATA?.navBar"></app-nav-bar>
 <div class="container">
-  <app-home></app-home>
+  <app-home id="home"></app-home>
+  <app-about [aboutMessage]="DATA?.about"></app-about>
+
 </div>
+<app-nav-bar [linksNavBar]="DATA?.navBar"></app-nav-bar>
+
 <!-- <app-skill-card skillName="html"></app-skill-card> -->
 <!-- <app-proyect-card></app-proyect-card> -->
