@@ -1,0 +1,11 @@
+<div class="proyect-card">
+  <img [src]="'/assets/img/'+dataProyect.previewImg" alt="{{dataProyect.previewImg}}">
+  <div class="proyect-information">
+    <span class="proyect-title">{{dataProyect.projectName}}</span>
+    <p class="proyect-description">{{dataProyect.description}}</p>
+    <div class="card-buttons">
+      <button *ngIf="dataProyect.projectURL">View Web</button>
+      <button *ngIf="dataProyect.githubRepository">View Code</button>
+    </div>
+  </div>
+</div>

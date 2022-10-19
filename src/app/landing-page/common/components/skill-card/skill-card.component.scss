@@ -1,0 +1,15 @@
+.skill-card{
+  max-width: 60px;
+  min-width: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  img{
+    width: 50px;
+    transition-property: width;
+    transition-duration: 0.4s;
+    &:hover{
+      width: 60px;
+    }
+  }
+}

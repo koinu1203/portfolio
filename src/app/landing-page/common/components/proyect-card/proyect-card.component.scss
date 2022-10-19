@@ -1,0 +1,94 @@
+@import '/src/assets/styles/color-variables.scss';
+
+.proyect-card{
+  // background-color: white;
+  max-width: 300px;
+  height:fit-content;
+  display: inline-flex;
+  flex-direction: column;
+  border-radius: 20px 20px 18px 18px;
+  img{
+    height: 300px;
+    width: 300px;
+    border-radius: 18px 18px 0px 0px;
+  }
+  .proyect-information{
+    position: relative;
+    display: inherit;
+    height: 80px;
+    flex-direction: inherit;
+    align-items: center;
+    justify-items: center;
+    justify-content: center;
+    width: 300px;
+    background-color: $color-gray-light;
+    border-radius: 0px 0px 18px 18px;
+    padding-top: 10px;
+    bottom: 0px;
+
+    transition-property: bottom,height,border-radius;
+    transition-duration: 0.8s;
+    .proyect-title{
+      inline-size: 250px;
+      overflow-wrap: break-word;
+      font-size:large;
+      text-transform: uppercase;
+      font-weight: bold;
+      color: inherit;
+    }
+    .proyect-description{
+      margin-top: 0px;
+      width: 250px;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      font-size: small;
+      transition-property: white-space;
+      transition-duration: 0.5s;
+    }
+  }
+  .card-buttons{
+    padding-bottom: 15px;
+    grid-area: footer;
+    display: none;
+    width: 80%;
+    flex-direction: row;
+    justify-content:space-around;
+  }
+  &:hover img{
+    border-radius: 18px;
+  }
+  &:hover .proyect-information{
+    background-color: rgba(4, 0, 38, 0.274);
+    // border: 1px solid $color-gray-light;
+    justify-items: center;
+    justify-content: center;
+    border-radius: 18px;
+    backdrop-filter: blur(10px);
+    height: 300px;
+    bottom: 250px;
+    color: $color-gray-light;
+    .proyect-title{
+      color: $color-blue;
+    }
+    .proyect-description{
+      inline-size: 250px;
+      white-space: break-spaces;
+      overflow: visible;
+      overflow-wrap: break-word;
+      text-overflow:initial;
+
+    }
+  }
+  &:hover .card-buttons{
+    display: flex;
+  }
+  @keyframes showinformation {
+    from{
+
+    }
+    to{
+
+    }
+  }
+}
