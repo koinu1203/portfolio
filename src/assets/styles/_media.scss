@@ -1,3 +1,5 @@
+@import './breakpoint.scss';
+
 @mixin xs {
   @media only screen and (max-width:$xs) {
     @content;

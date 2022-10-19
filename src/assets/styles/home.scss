@@ -15,6 +15,9 @@ app-home{
     margin-bottom: 60px;
     .home-title{
       padding-block:20px;
+      @include md{
+        padding-inline: 20px;
+      }
       background-color: rgba(9, 9, 9, 0.467);
     }
   }

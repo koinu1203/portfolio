@@ -8,6 +8,7 @@ import { IProyect } from '../../interfaces';
 })
 export class ProyectCardComponent implements OnInit {
   @Input() dataProject:IProyect;
+  showContent:boolean=false;
   constructor() {
     this.dataProject={
       projectName: 'default',
@@ -20,5 +21,7 @@ export class ProyectCardComponent implements OnInit {
 
   ngOnInit(): void {
   }
-
+  clickCard(){
+    this.showContent = !this.showContent;
+  }
 }

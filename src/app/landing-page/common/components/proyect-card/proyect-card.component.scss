@@ -18,7 +18,9 @@ $duration-animation: 0.5s;
     position: absolute;
     height: 280px;
     width: 300px;
-    border-radius: 18px;
+    border-radius: 20px;
+    background-color: $color-gray-light;
+
   }
 
   .proyect-information {
@@ -69,7 +71,7 @@ $duration-animation: 0.5s;
     justify-content: space-around;
   }
 
-  &:hover {
+  &:hover, &.show {
     .proyect-information {
       background-color: rgba(3, 0, 27, 0.274);
       justify-items: center;

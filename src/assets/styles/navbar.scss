@@ -1,6 +1,5 @@
 @import './color-variables.scss';
 
-
 a{
   text-decoration: none;
 }
@@ -9,6 +8,10 @@ app-nav-bar{
   top: 0;
   width: 100%;
   background-color: $color-secondary;
+  @include md{
+    background-color: $color-secondary-no-degrade;
+
+  }
   height:fit-content;
 }
 .navbar{
@@ -16,6 +19,7 @@ app-nav-bar{
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
+
   .logo{
     width: 100px;
     height: 60px;
@@ -27,11 +31,15 @@ app-nav-bar{
   }
   .nav{
     display:flex;
-    justify-content: right;
+    justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
     list-style: none;
     margin: 0px;
     padding: 0px;
+    @media md {
+      justify-content: center;
+    }
     .nav-item{
       padding-block: 1em;
       margin-inline: 1em;
@@ -41,6 +49,10 @@ app-nav-bar{
       align-items: center;
       color: $color-gray;
 
+      @include md{
+        padding-block: 5px;
+        margin-inline: 5px;
+      }
       .underline-animation{
         display: block;
         position:relative;
@@ -48,7 +60,9 @@ app-nav-bar{
         height: 2px;
         background-color: $color-gray;
         width: 0%;
-
+        @include md{
+          bottom: -5px;
+        }
         transition-property: width,background-color;
         transition-duration: 0.7s;
         &.selected{
@@ -67,7 +81,8 @@ app-nav-bar{
     }
     .selected {
       transition-property: background-color;
-      height: 100%;
+      height:fit-content;
+      max-height: 60px;
       background-color: $color-background;
       .nav-item{
         color: $color-gray-light;

@@ -1,14 +1,18 @@
+@import './media.scss';
+
 .about-card{
   width: 100vw;
   height: 350;
   padding-top: 120px;
   margin-bottom: 60px;
   display: flex;
+  flex-wrap: wrap;
   flex-direction: row;
   justify-content:center;
   justify-items: center;
+  align-items: center;
   .about-img{
-    margin-right: 3em;
+    margin: 3em;
     width: 300px;
     height: 300px;
     border-radius: 20px 0px 20px 0px;
@@ -19,6 +23,9 @@
       width: inherit;
       height: inherit;
       border-radius: inherit;
+      @include md{
+        bottom: 220px;
+      }
     }
     .line-decoration{
       position:relative;
@@ -29,6 +36,11 @@
       -webkit-box-shadow: 0px 0px 0px 2px rgba(255,255,255,1);
       -moz-box-shadow: 0px 0px 0px 2px rgba(255,255,255,1);
       box-shadow: 0px 0px 0px 2px rgba(255,255,255,1);
+    }
+    @include md{
+      width: 200px;
+      height: 200px;
+
     }
   }
   .about-info{
@@ -43,6 +55,15 @@
 
       font-size:16px;
       font-weight: lighter;
+
+      @include md {
+
+        font-size:12px;
+
+      }
+    }
+    @include md{
+      margin: 2em;
     }
   }
 }

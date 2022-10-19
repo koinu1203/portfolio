@@ -1,5 +1,6 @@
 import { Component, OnDestroy, OnInit } from '@angular/core';
-import { map, Subject, takeUntil } from 'rxjs';
+import { Router } from '@angular/router';
+import { Subject, takeUntil } from 'rxjs';
 import { Languages } from './common/enums';
 import { IProyect } from './common/interfaces';
 import { DataService } from './common/services/data.service';
@@ -14,13 +15,17 @@ export class LandingPageComponent implements OnInit, OnDestroy {
   skills:Array<string> = [];
   projects:Array<IProyect> = [];
   private unsubscribe$: Subject<void> = new Subject();
-  constructor(private dataService: DataService) {}
+  constructor(
+    private dataService: DataService,
+    private router:Router
+    ) {}
   ngOnDestroy(): void {
     this.unsubscribe$.next();
     this.unsubscribe$.complete();
   }
 
   ngOnInit(): void {
+    this.router.navigate(['']);
     this.loadConfig();
   }
   loadConfig() {

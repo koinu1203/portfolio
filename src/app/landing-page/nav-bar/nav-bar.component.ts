@@ -34,4 +34,7 @@ export class NavBarComponent implements OnInit,OnChanges {
       this.selected=key;
     }
   }
+  onLogo(){
+    this.selected='';
+  }
 }
