@@ -67,6 +67,7 @@
   "experience":[
     {
       "company":"NTTDATA - Interbank group",
+      "companyIcon":"/assets/img/nttdata-logo.jpg",
       "charge": "Front End Development",
       "expDescription":"consumption of services, creation of micro fronts and responsive web design",
       "startTime":"02-2022",
@@ -83,13 +84,13 @@
     },
     {
       "company":"Roblex",
+      "companyIcon":"/assets/img/roblex-logo.jpg",
       "charge": "Front End Support",
       "expDescription":"application support and creation of new functionalities",
       "startTime":"08-2022",
       "endTime":"11-2022",
       "implementedSkills":[
         "angular",
-        "angularMaterial",
         "figma",
         "npm",
         "git"

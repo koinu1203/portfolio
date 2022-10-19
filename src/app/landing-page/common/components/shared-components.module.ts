@@ -5,12 +5,11 @@ import { ProyectCardComponent } from './proyect-card/proyect-card.component';
 import { ExperienceCardComponent } from './experience-card/experience-card.component';
 
 
-const components = [SkillCardComponent,ProyectCardComponent];
+const components = [SkillCardComponent,ProyectCardComponent,ExperienceCardComponent];
 
 @NgModule({
   declarations: [
     ...components,
-    ExperienceCardComponent,
   ],
   imports: [
     CommonModule

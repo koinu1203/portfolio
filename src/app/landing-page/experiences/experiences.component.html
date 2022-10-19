@@ -1,0 +1,13 @@
+<div class="experiences-container">
+  <div class="experiences-title">
+    <h2>Experience</h2>
+    <h3>Where I work</h3>
+  </div>
+  <div class="experiences-list">
+    <div class="experiences-element"
+    *ngFor="let experience of experiences">
+      <app-experience-card [experience]="experience"></app-experience-card>
+    </div>
+  </div>
+
+</div>

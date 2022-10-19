@@ -11,6 +11,7 @@ import { AboutComponent } from './about/about.component';
 import { SkillsComponent } from './skills/skills.component';
 import { ProyectsComponent } from './proyects/proyects.component';
 import { AppRoutingModule } from '../app-routing.module';
+import { ExperiencesComponent } from './experiences/experiences.component';
 
 
 @NgModule({
@@ -20,7 +21,8 @@ import { AppRoutingModule } from '../app-routing.module';
     HomeComponent,
     AboutComponent,
     SkillsComponent,
-    ProyectsComponent
+    ProyectsComponent,
+    ExperiencesComponent
   ],
   imports: [
     CommonModule,

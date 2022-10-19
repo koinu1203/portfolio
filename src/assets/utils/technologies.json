@@ -64,6 +64,31 @@
       "name": "Git",
       "organizationUrl": "https://git-scm.com/",
       "logoImg":"git-logo.svg"
+    },
+    "graphql":{
+      "name": "Graphql",
+      "organizationUrl": "https://graphql.org/",
+      "logoImg":"graphql-logo.svg"
+    },
+    "figma":{
+      "name": "Figma",
+      "organizationUrl": "https://www.figma.com",
+      "logoImg":"figma-logo.svg"
+    },
+    "invision":{
+      "name": "InVision",
+      "organizationUrl": "https://www.invisionapp.com/",
+      "logoImg":"invision-logo.svg"
+    },
+    "stenciljs":{
+      "name": "StencilJS",
+      "organizationUrl": "https://stenciljs.com/",
+      "logoImg":"stencil-logo.svg"
+    },
+    "npm":{
+      "name": "npm",
+      "organizationUrl": "https://www.npmjs.com/",
+      "logoImg":"npm-logo.svg"
     }
   }
 }
