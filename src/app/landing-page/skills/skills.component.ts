@@ -29,9 +29,7 @@ export class SkillsComponent implements OnInit,OnDestroy {
       .pipe(takeUntil(this.unsubscribe$))
       .subscribe((val:any)=>{
         this.technologies = val.technologies;
-        console.log('val',val);
 
-        console.log(this.technologies);
       });
   }
 }
