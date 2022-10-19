@@ -1,0 +1,94 @@
+{
+  "technologies": {
+    "angular":{
+      "name": "Angular",
+      "organizationUrl":"https://angular.io/",
+      "logoImg":"angular-logo.svg"
+    },
+    "react":{
+      "name": "React",
+      "organizationUrl":"https://es.reactjs.org/",
+      "logoImg":"react-logo.svg"
+    },
+    "javascript":{
+      "name": "JavaScript",
+      "organizationUrl":"https://developer.mozilla.org/en-US/docs/Web/JavaScript",
+      "logoImg":"javascript-logo.svg"
+    },
+    "css":{
+      "name": "SCSS/CSS",
+      "organizationUrl":"https://developer.mozilla.org/en-US/docs/Web/CSS",
+      "logoImg":"css-logo.svg"
+    },
+    "python":{
+      "name": "Python",
+      "organizationUrl":"https://www.python.org/",
+      "logoImg":"python-logo.svg"
+    },
+    "django":{
+      "name": "Django",
+      "organizationUrl":"https://www.djangoproject.com/",
+      "logoImg":"django-logo.svg"
+    },
+    "linux":{
+      "name": "Linux",
+      "organizationUrl":"https://www.linux.org/",
+      "logoImg":"linux-logo.svg"
+    },
+    "html":{
+      "name": "HTML/HTML5",
+      "organizationUrl":"https://developer.mozilla.org/en-US/docs/Web/HTML",
+      "logoImg":"html-logo.svg"
+    },
+    "photoshop":{
+      "name": "Photoshop",
+      "organizationUrl":"https://www.adobe.com/pe/products/photoshop.html",
+      "logoImg":"photoshop-logo.svg"
+    },
+    "springBoot": {
+      "name": "Spring Boot",
+      "organizationUrl":"https://spring.io/projects/spring-boot",
+      "logoImg":"spring-logo.svg"
+    },
+    "bootstrap":{
+      "name": "Bootstrap",
+      "organizationUrl":"https://getbootstrap.com/",
+      "logoImg":"bootstrap-logo.svg"
+    },
+    "typescript":{
+      "name": "TypeScript",
+      "organizationUrl":"https://www.typescriptlang.org/",
+      "logoImg":"typescript-logo.svg"
+    },
+    "git":{
+      "name": "Git",
+      "organizationUrl": "https://git-scm.com/",
+      "logoImg":"git-logo.svg"
+    },
+    "graphql":{
+      "name": "Graphql",
+      "organizationUrl": "https://graphql.org/",
+      "logoImg":"graphql-logo.svg"
+    },
+    "figma":{
+      "name": "Figma",
+      "organizationUrl": "https://www.figma.com",
+      "logoImg":"figma-logo.svg"
+    },
+    "invision":{
+      "name": "InVision",
+      "organizationUrl": "https://www.invisionapp.com/",
+      "logoImg":"invision-logo.svg"
+    },
+    "stenciljs":{
+      "name": "StencilJS",
+      "organizationUrl": "https://stenciljs.com/",
+      "logoImg":"stencil-logo.svg"
+    },
+    "npm":{
+      "name": "npm",
+      "organizationUrl": "https://www.npmjs.com/",
+      "logoImg":"npm-logo.svg"
+    }
+  }
+}

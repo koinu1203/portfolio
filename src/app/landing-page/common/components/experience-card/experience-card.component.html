@@ -1,0 +1,19 @@
+<div class="experience-card-container" *ngIf="experience">
+  <div class="experience-card-header">
+    <img [src]="experience.companyIcon" [alt]="experience.companyIcon">
+    <div class="experience-card-title">
+      <h4 class="experience-card-company-name">{{experience.company}}</h4>
+      <span class="experience-card-subtitle">{{experience.startTime}} | {{experience.endTime}}</span>
+    </div>
+  </div>
+  <div class="experience-card-body">
+    <p class="experience-card-description">{{experience.expDescription}}</p>
+    <div class="experience-card-technologies">
+      <span>Technologies:</span>
+      <div class="experience-card-technologies-logos"
+        *ngFor="let keySkill of experience.implementedSkills">
+        <img [src]="'/assets/img/logos/'+technologies[keySkill]?.logoImg" alt="{{keySkill}}">
+      </div>
+    </div>
+  </div>
+</div>

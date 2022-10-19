@@ -1,0 +1,18 @@
+<nav id="nav-bar"
+     class="navbar">
+  <a class="logo" href="#home" (click)="onLogo()">
+    <img src="/assets/img/LogoPorfolio.svg" alt="DDO logo">
+  </a>
+  <ul class="nav">
+    <li [ngClass]="{'selected': link.key=== selected}"
+        *ngFor="let link of links">
+      <a class="nav-item"
+         (click)="onSelectItem(link.key)"
+         href="#{{link.key}}">
+        <span>{{link.name}}</span>
+        <div id="underline"
+             class="underline-animation"></div>
+      </a>
+    </li>
+  </ul>
+</nav>

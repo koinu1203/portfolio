@@ -1,0 +1,69 @@
+@import './media.scss';
+
+.about-card{
+  width: 100vw;
+  height: 350;
+  padding-top: 120px;
+  margin-bottom: 60px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content:center;
+  justify-items: center;
+  align-items: center;
+  .about-img{
+    margin: 3em;
+    width: 300px;
+    height: 300px;
+    border-radius: 20px 0px 20px 0px;
+    img{
+      position:relative;
+      bottom: 320px;
+      right: 20px;
+      width: inherit;
+      height: inherit;
+      border-radius: inherit;
+      @include md{
+        bottom: 220px;
+      }
+    }
+    .line-decoration{
+      position:relative;
+      border-radius: inherit;
+      width: inherit;
+      height: inherit;
+
+      -webkit-box-shadow: 0px 0px 0px 2px rgba(255,255,255,1);
+      -moz-box-shadow: 0px 0px 0px 2px rgba(255,255,255,1);
+      box-shadow: 0px 0px 0px 2px rgba(255,255,255,1);
+    }
+    @include md{
+      width: 200px;
+      height: 200px;
+
+    }
+  }
+  .about-info{
+    margin-left: 3em;
+    width: 520px;
+    text-align:left;
+    h3{
+      margin-top: 15px;
+    }
+    p{
+      margin-top: 15px;
+
+      font-size:16px;
+      font-weight: lighter;
+
+      @include md {
+
+        font-size:12px;
+
+      }
+    }
+    @include md{
+      margin: 2em;
+    }
+  }
+}

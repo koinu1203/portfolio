@@ -1,0 +1,15 @@
+<div class="proyect-card" [ngClass]="{'show':showContent}" (click)="clickCard()">
+  <img [src]="'/assets/img/'+dataProject.previewImg" alt="{{dataProject.previewImg}}">
+  <div class="proyect-information">
+    <span class="proyect-title">{{dataProject.projectName}}</span>
+    <p class="proyect-description">{{dataProject.description}}</p>
+    <div class="card-buttons">
+      <a *ngIf="dataProject.projectURL" [href]="dataProject.projectURL" target="_blank">
+        <button >View Web</button>
+      </a>
+      <a *ngIf="dataProject.githubRepository" [href]="dataProject.githubRepository" target="_blank">
+        <button>View Code</button>
+      </a>
+    </div>
+  </div>
+</div>

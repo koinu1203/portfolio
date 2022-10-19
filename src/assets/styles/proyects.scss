@@ -1,0 +1,19 @@
+.proyects-container{
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  .proyects-title{
+    margin-bottom: 32px;
+  }
+  .proyects-porfolio{
+    width: 80vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: row;
+    .proyects-card{
+      margin: 20px;
+    }
+  }
+}
