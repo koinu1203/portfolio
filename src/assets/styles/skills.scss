@@ -11,7 +11,7 @@
   .skills-technologies{
     width: 70%;
     max-width: 80vw;
-    height: 100px;
+    height:fit-content;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
@@ -22,9 +22,7 @@
       position: relative;
       padding: 20px;
     }
-    @include md{
-      height:fit-content;
-    }
+
     margin-top: 30px;
   }
 }

@@ -20,7 +20,6 @@ export class NavBarComponent implements OnInit,OnChanges {
           name: this.linksNavBar[key]
         };
       })
-      console.log(this.linksNavBar);
     }
   }
 

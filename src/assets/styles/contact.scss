@@ -4,13 +4,16 @@
   margin-top: 120px;
   padding-block: 50px;
   background-color: $color-blue-dark;
+  @include md{
+    padding-inline: 20px;
+  }
   .contact-link{
     &-list{
       margin-top: 30px;
       display: flex;
       flex-direction: row;
       justify-content: center;
-
+      flex-wrap: wrap;
     }
 
   }
