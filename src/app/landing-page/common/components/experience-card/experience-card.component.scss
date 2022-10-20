@@ -1,7 +1,7 @@
 @import '/src/assets/styles/color-variables.scss';
+@import '/src/assets/styles/media.scss';
 .experience-card{
   &-container{
-    min-width: 240px;
     width: 480px;
     height: 206px;
     border-radius: 20px;
@@ -9,7 +9,10 @@
     margin: 20px;
     background-color: $color-blue-dark;
     text-align: left;
-
+    @include md{
+      width: 80vw;
+      height: fit-content;
+    }
   }
   &-header{
     margin-left: 1em;
@@ -36,6 +39,7 @@
     flex-direction: column;
     justify-content: space-between;
     margin-top: 14px;
+    padding-bottom: 20px;
     height: 100px;
     font-size: small;
     span{
@@ -49,6 +53,7 @@
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
+    flex-wrap: wrap;
 
     // justify-content: center;
     // align-items: center;
@@ -56,6 +61,7 @@
       margin-left: 5px;
       display: flex;
       justify-content: center;
+      flex-wrap: wrap;
       padding: 5px;
       // border-color: black;
       // border-style: solid;
