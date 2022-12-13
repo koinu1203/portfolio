@@ -7,13 +7,13 @@ import { Component, OnInit,Input, OnChanges, SimpleChanges } from '@angular/core
 })
 export class NavBarComponent implements OnInit,OnChanges {
   @Input() linksNavBar!:any;
+  @Input() selected: string='';
   links: Array<any> = [];
-  selected: string='';
   constructor() {
   }
 
   ngOnChanges(changes: SimpleChanges): void {
-    if(changes['linksNavBar'].currentValue){
+    if(!!this.links && changes['linksNavBar']?.currentValue){
       this.links = Object.keys(this.linksNavBar).map((key)=>{
         return {
           key: key,

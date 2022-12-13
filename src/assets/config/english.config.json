@@ -46,10 +46,10 @@
       "previewImg":"Portal2Enviroment.jpg"
     },
     {
-      "projectName":"ImgDownloadScript",
-      "githubRepository":"https://github.com/koinu1203/ImgDownloadScript",
-      "description":"Scraping and image downloads script for the Tapas.io page",
-      "previewImg":"logos/python-logo.svg"
+      "projectName":"RamHotelAPI",
+      "githubRepository":"https://github.com/koinu1203/RamHotelAPI",
+      "description":"API created with spring-boot for managing services in Hotel Ram",
+      "previewImg":"logos/spring-logo.svg"
     },
     {
       "projectName":"Airline Proyect",
