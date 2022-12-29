@@ -1,15 +1,20 @@
 .skill-card{
-  max-height: 70px;
-  min-height: 50px;
+  max-height: 50px;
   display: flex;
   justify-content: center;
   align-items: center;
+  margin: 3px;
   img{
     height: 50px;
-    transition-property: height;
+    transition-property: transform;
     transition-duration: 0.3s;
     &:hover{
-      height: 70px;
+      transform: scale(1.5);
+      // position: absolute;
+      // height: 70px;
     }
+  }
+  &:hover{
+    position: relative;
   }
 }
