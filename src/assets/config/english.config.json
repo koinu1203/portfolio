@@ -8,7 +8,7 @@
     "experience": "Experience",
     "contact": "Contact Me"
   },
-  "about": "Hi, my name is Daniel, I have 22 years old and I'm a Web Developer specialized in the main development front-end frameworks such as Angular and React, and essential knowledge of Back-End frameworks like Sprintboot and Django. I am in my 9th cycle studying Computer Systems Engineering at Private University of the North and I really like the food of my country, Perú.",
+  "about": "Hello, my name is Daniel, I am 22 years old and I am a Web Developer. I specialize in the main front-end development frameworks such as Angular, React and Vue, although I also have essential knowledge of Back-End frameworks such as Sprintboot and Django. I am in my 9th cycle studying Computer Systems Engineering at the Universidad Privada del Norte and I really like the food from my country, Peru.",
   "skills":[
     "angular",
     "react",
@@ -21,7 +21,9 @@
     "photoshop",
     "springBoot",
     "bootstrap",
-    "typescript"
+    "typescript",
+    "vue",
+    "vite"
   ],
   "projects": [
     {
@@ -46,10 +48,11 @@
       "previewImg":"Portal2Enviroment.jpg"
     },
     {
-      "projectName":"RamHotelAPI",
-      "githubRepository":"https://github.com/koinu1203/RamHotelAPI",
-      "description":"API created with spring-boot for managing services in Hotel Ram",
-      "previewImg":"logos/spring-logo.svg"
+      "projectName":"Report Generator Page",
+      "githubRepository":"https://github.com/koinu1203/GenReports-Tkambio-front",
+      "projectURL":"https://koinu1203.github.io/GenReports-Tkambio-front/",
+      "description":"This is the layout of a responsive graphic interface for the digital exchange house Tkambio",
+      "previewImg":"GenReports-Tkambio.jpg"
     },
     {
       "projectName":"Airline Proyect",
