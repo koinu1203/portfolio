@@ -1,6 +1,6 @@
 @import '/src/assets/styles/color-variables.scss';
 
-$duration-animation: 0.5s;
+$duration-animation: 0.7s;
 
 .proyect-card {
   max-width: 300px;
@@ -40,12 +40,14 @@ $duration-animation: 0.5s;
     transition-duration: $duration-animation;
 
     .proyect-title {
+
       inline-size: 250px;
       overflow-wrap: break-word;
       font-size: large;
       text-transform: uppercase;
       font-weight: bold;
       color: inherit;
+
     }
 
     .proyect-description {
@@ -59,20 +61,36 @@ $duration-animation: 0.5s;
       transition-duration: $duration-animation;
     }
   }
+  @keyframes showbuttons {
+    0%{
+      opacity: 0;
+      transform: translateY(50%);
+    }
+    100%{
+      opacity: 100;
+      transform: translateY(0);
+    }
+  }
 
   .card-buttons {
+    opacity: 0;
     margin-top: 15px;
+    margin-bottom: 15px;
     padding-bottom: 15px;
     grid-area: footer;
     display: none;
     width: 80%;
     flex-direction: row;
     justify-content: space-around;
+    transition-property: opacity;
+    transition-duration: $duration-animation;
+
   }
+
 
   &:hover, &.show {
     .proyect-information {
-      background-color: rgba(3, 0, 27, 0.274);
+      background-color: rgba(3, 0, 27, 0.523);
       justify-items: center;
       justify-content: center;
       border-radius: 18px;
@@ -83,7 +101,9 @@ $duration-animation: 0.5s;
       color: $color-gray-light;
 
       .proyect-title {
+        opacity: 100;
         color: $color-blue;
+        -webkit-text-stroke: 0.1px $color-white;
       }
 
       .proyect-description {
@@ -97,7 +117,16 @@ $duration-animation: 0.5s;
     }
 
     .card-buttons {
+      animation-name: showbuttons;
+      animation-duration: $duration-animation+0.5;
       display: flex;
+      opacity: 100;
+    }
+
+  }
+  &after{
+    .card-buttons{
+      opacity: 100;
     }
   }
 }

@@ -1,8 +1,20 @@
+app-proyects{
+  display:flex;
+  width: 100%;
+  justify-content: center;
+  position:relative;
+  height: 100vh;
+  @include md{
+    height: fit-content;
+    margin-bottom: 50vh;
+  }
+}
+
 .proyects-container{
-  margin-top: 100px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  height: fit-content;
   .proyects-title{
     margin-bottom: 32px;
   }
