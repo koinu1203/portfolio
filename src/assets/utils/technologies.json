@@ -89,6 +89,17 @@
       "name": "npm",
       "organizationUrl": "https://www.npmjs.com/",
       "logoImg":"npm-logo.svg"
+    },
+    "vite":{
+      "name": "Vite",
+      "organizationUrl": "https://vitejs.dev/",
+      "logoImg":"vite-logo.svg"
+    },
+    "vue":{
+      "name": "VueJS",
+      "organizationUrl": "https://vuejs.org/",
+      "logoImg":"vuejs-logo.svg"
     }
+
   }
 }
