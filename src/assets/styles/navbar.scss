@@ -7,6 +7,7 @@ app-nav-bar{
   position: fixed;
   top: 0;
   width: 100%;
+  z-index: 100000;
   background-color: $color-secondary;
   @include md{
     background-color: $color-secondary-no-degrade;
