@@ -1,3 +1,11 @@
+app-skills{
+  display: flex;
+  justify-content: center;
+  width: 100% !important;
+  height: fit-content;
+  min-height: 100vh;
+}
+
 .skills-container{
 
   display: flex;
@@ -5,16 +13,12 @@
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  justify-items: center;
-  margin-top: 120px;
-  margin-inline: 20px;
-  .skills-technologies{
-    width: 70%;
-    max-width: 80vw;
-    max-height: 60px;
-    @include md {
-      // width: fit-content;
 
+  width: 90%;
+  position: relative;
+  .skills-technologies{
+    width: 100%;
+    @include md {
       height:fit-content;
       max-height: 300px;
     }
@@ -22,10 +26,12 @@
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: center;
-    justify-items: center;
+    // justify-items: center;
     align-items: center;
+    position:relative;
+    max-height: min-content;
     .skills-card{
-      position: relative;
+      position:relative;
       margin: 10px;
     }
 
