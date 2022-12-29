@@ -44,7 +44,7 @@ export class LandingPageComponent implements OnInit, OnDestroy {
             const element = document.getElementById(val);
             this.idList.push(element);
           }catch(e){
-            console.log(e);
+            console.error(e);
           }
         })
         this.skills = val['skills'];
